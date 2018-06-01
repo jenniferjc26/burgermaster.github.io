@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<title>Master burger</title>
+<meta charset="UTF-8">
+<link rel="icon" href="https://image.flaticon.com/icons/png/512/33/33415.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("master burger.jpg");
+    min-height: 90%;
+}
+
+    
+  
+</style>
+<body>
+ 
+</div>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact"class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#deliver" class="w3-bar-item w3-button">DELIVER</a>
+    
+    
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <html>
+
+<body>
+
+
+<div class="w3-content w3-display-container">
+  <center>
+  <img class="mySlides" src="" style="width:250%" "height="270" >
+  <img class="mySlides" src="IMG_5871.jpg" style="width:165%"height="1000"> 
+  <img class="mySlides" src="o.jpg" style="width:160%">
+  <img class="mySlides" src="pizza.jpg" style="width:160%">
+  </center> 
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+    <span class="w3-tag w3-xlarge">Open from 10am to 11pm</span>
+  </div>
+</body>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">MASTER<br>BURGER</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>MASTER<br>BURGER</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+    
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU ( menus may vary  )</h1>
+    <p align="center">(Check out our<a href="#deliver" class="w3-bar-item w3-button">Delivers!</a>page to look at our delivery options!)</p>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'burgers');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Burger</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'drinks');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Extra menu items');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Extra Menu Items</div>
+      </a>
+    </div>
+    
+<!-- Menu burgers stuff -->
+
+    <div id="burgers" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Master Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Made with handmade patty from fresh juicy ground beef, includes lettuce, tomatoes, pickles, onion, mustard and mayonnaise</p>
+      <hr>
+   
+      <h1><b>Avocado Bacon Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.25</span></h1>
+      <p class="w3-text-grey">Made with handmade patty from fresh juicy ground beef, includes lettuce, tomatoes, pickles, bacon,avacado, and mayonnaise.</p>
+      <hr>
+      
+    <h1><b>Bacon Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.00</span></h1>
+      <p class="w3-text-grey">Handmade patties from fresh juicy ground beef also includes lettuce, tomatoes, pickles, bacon, onion, mustard and mayonnaise. (CHEESE NOT INCLUDED)</p>
+      <hr>
+
+      <h1><b>Pastrami Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.15</span></h1>
+      <p class="w3-text-grey">Juicy handmade ground beef pattie with pastrami, lettuce, tomatoes, pickles, onion, mustard, and mayonnaise. </p>
+      <hr>
+
+     <h1><b>Turkey Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.01</span></h1>
+      <p class="w3-text-grey">Handmade turkey pattie with lettuce, tomatoes, pickles, onion, musttard, and mayonnaise.</p>
+      <hr>
+
+       <h1><b>Double Master Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Two juicy handmade ground beef patties with tomatoes, lettuce, onion, pickles, mustard, and mayonnaise.</p>
+    </div>
+<!-- End Menu burgers -->
+
+    <!-- Menu Drinks stuff -->
+    <div id="drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Strawberry shake</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">also available in chocolate, pineapple, and vanilla</p>
+      <hr>
+   
+      <h1><b>Root beer float</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Snapple</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$1.69</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1><b>Fountain Drinks</b><span class="w3-right w3-tag w3-dark-grey w3-round">$1.15</span></h1>
+      <p class="w3-text-grey">coke, diet coke, coca cola, sprite</p>
+    </div>
+<!-- End Menu drinks -->
+
+    <!-- Menu extas stuff -->
+    <div id="Extra menu items" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Asada French Fries</b> <span class="w3-tag w3-grey w3-round">yum</span><span class="w3-right w3-tag w3-dark-grey w3-round">$13.00</span></h1>
+      <p class="w3-text-grey">Cheese, onions, tomatoes, sour cream, guacamole and cilantro</p>
+      <hr>
+   
+      <h1><b>Nachos Plate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.50</span></h1>
+      <p class="w3-text-grey">Includes freshly made corn chips with beans, chili tomatoes, onion, avocado sauce, melted cheese and sour cream, </p>
+      <hr>
+      
+      <h1><b>Tortas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$800</span></h1>
+      <p class="w3-text-grey">Some include steak,chicken, and ham. They include mayo,lettuce,tomato, grill onions, avocado, beans</p>
+      <hr>
+      
+      <h1><b>Salads</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">the types of salads are chicken,steak, and chef</p>
+    </div><br>
+<!-- Menu extas stuff -->
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <style>
+    
+img {
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+</style>
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p> It started with a burger and a dream  </p>
+    <p><strong>Master Burger</strong> Home of the big burgers
+    <p>we have been open since 1962</p>
+    <p>we offer more than just burgers we have pizza burritos and breakfast plates
+    <p> my burger, your burger, burger for all</p>
+    <img src="master burgerlocation.jpg" style="width:90%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+     <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Monday-Thursday 8:00am-11:30 pm 
+        <p> Friday-Sat 8:00am- 12:30am 
+        <p> Sunday 9:00am-10:30 at our Western location</p>
+     
+      </div>
+      <div class="w3-col s6">
+        <p>Monday-Sunday 9:00am- 10:00pm at our Slauson location</p>
+        <p></p>
+        <p>Monday-Sunday 10:00-11:00pm at our Adams location</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <div>
+    </div>
+    <b>Find us at some address below or call us at your desired location</b>
+
+     <div class="w3-row">
+      <div class="w3-col s6">
+    <p>4366 W Adams Blvd, Los Angeles, CA 90018</p> <p> (323) 734-8021</p>  
+    <p>4419 S Western Ave, Los Angeles, CA 90062</p> <p>(323) 295-1940</p>
+    </div>
+      <div class="w3-col s6">
+    <p>1001 S Broadway, Los Angeles, CA 90015</p>     <P>(213) 536-5039</P> 
+    <p>3420 W Slauson Ave a, Los Angeles, CA 90043</p> <p>(323) 293-0890</p>
+    <div>
+    </div>
+    <div></div>
+    </div>
+
+<!-- Add yelp -->
+<div>
+</div>
+<div></div>
+
+    <form action="/action_page.php" target="_blank">
+    </form>
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=master burgers&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.pureblack.de/webdesign-wiesbaden/"></a><style>.mapouter{overflow:hidden;height:500px;width:600px;}.gmap_canvas {background:none!important;height:500px;width:600px;}</style></div>
+    <p> <span class="yelp-review" data-review-id="f-F4HU5t7e_MjGs6Pl-EsA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=vX5oYs8ieCuNwqojt4By1w" rel="nofollow noopener">Christian C.</a>'s <a href="https://www.yelp.com/biz/master-burger-los-angeles?hrid=f-F4HU5t7e_MjGs6Pl-EsA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/Yq7DDzkfMEWPQO_xrUJarA" rel="nofollow noopener">Master Burger</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+  
+    </div>
+  </div>
+</div> 
+  
+  </div>
+</div>
+
+<script>
+function myMap()
+{
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+<!-- delivery -->
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="deliver">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Delivery</h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <h2> you can order on <a href="https://www.seamless.com/browse/ca-los_angeles">Seamless</a></h2>
+    <p></p>
+<h2>You can also order online on <a href="https://www.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&facetSet=umamiV2&pageSize=20&hideHateos=true&searchMetrics=true&latitude=34.03273773&longitude=-118.31746674&variationId=default-impressionScoreViewAdjSearchOnlyBuffed-20160607&sortSetId=umamiV2&sponsoredSize=3&countOmittingTimes=true">GrubHub</a></h2>
+    </div>
+    <div class="w3-col s6">
+      <h2> you can order on <a href="https://www.ubereats.com/">Uber Eats</a></h2>
+       <h2> you can also try  <a href="https://postmates.com/">Postmates</a></h2>
+    </div>
+  </div>
+ 
+ 
+</body>
+</html>
